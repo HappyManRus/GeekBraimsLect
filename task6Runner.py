@@ -2,6 +2,7 @@ km_a = int(input("Введите кол-во км в первый день : "))
 aim_b = int(input("Введите цель км в день : "))
 total_km = float(km_a);
 days = 1;
+
 while total_km < aim_b:
     total_km += total_km * 0.1
     days += 1

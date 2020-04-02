@@ -7,6 +7,7 @@ else:
     print("Ваш финансовый результат отрицательный, вы убыточны... нужно что-то с этим делать!")
 
 workers_count = int(input("Введите колличество сотрудников работающих в вашей фирме : "))
+
 print(f"Ваша рентабельность {(profit_sum - cost_sum) / profit_sum / workers_count * 100}%")
 print("Ваша рентабельность {:.1f}%".format((profit_sum - cost_sum) / profit_sum / workers_count * 100))
 print("Ваша рентабельность %.1f%%" % ((profit_sum - cost_sum) / profit_sum / workers_count * 100))
