@@ -1,11 +1,13 @@
 km_a = int(input("Введите кол-во км в первый день : "))
 aim_b = int(input("Введите цель км в день : "))
-total_km = float(km_a);
-days = 1;
+total_km = float(km_a)
+days = 1
+print(f"В {days}й день спортсмен пробежит {km_a}")
 
 while total_km < aim_b:
     total_km += total_km * 0.1
     days += 1
+    print("В %iй день спортсмен пробежит %.2f" % (days, round(total_km,2)))
 
 print(f"Спортсмен достигнет цели на {days}й день, пробежит не менее {aim_b} км")
 
