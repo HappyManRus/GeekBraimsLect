@@ -1,5 +1,4 @@
 string_user = input("Введите строку из нескольких слов, через пробел: ")
-
 list_user = string_user.split()
 for list_elemnt in list_user:
     print(list_elemnt[:10])

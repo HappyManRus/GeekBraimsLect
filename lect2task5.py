@@ -5,7 +5,6 @@ for element_list in my_list:
     if element_list < user_number: break
     number+=1
 my_list.insert(number, user_number)
-
 print(f"Итоговый массив: {my_list}")
 
 
