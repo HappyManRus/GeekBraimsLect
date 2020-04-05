@@ -12,7 +12,9 @@ while True:
     item_type = input("Введите ежиницу измерения товара : ")
     mystruct.append((input_num, {"название": item_name, "цена": item_price, "количество": item_count, "eд": item_type}))
     input_num += 1
+
 print(mystruct)
+
 for element_tuple in mystruct:
     for elm_keys in element_tuple[1].keys():
         if new_dict.get(elm_keys) is None:
