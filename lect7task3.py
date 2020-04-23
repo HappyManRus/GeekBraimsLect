@@ -18,6 +18,9 @@ class Kletka:
     def __truediv__(self, other):
         return (self.colvokletok // other.colvokletok)
 
+    def __str__(self):
+        return (self.colvokletok // other.colvokletok)
+
     def make_order(self, colvoraid):
         a = ""
         for i in range(1, self.colvokletok + 1):
@@ -30,9 +33,11 @@ class Kletka:
 kletka1 = Kletka(51)
 kletka2 = Kletka(23)
 
-print(kletka1 + kletka2)
-print(kletka1 - kletka2)
-print(kletka1 * kletka2)
-print(kletka1 / kletka2)
+print(f"Заданы две клетки {kletka1.colvokletok} и {kletka2.colvokletok}")
+print(f"Результат сложения: {kletka1 + kletka2}")
+print(f"Резульат вычитания: {kletka1 - kletka2}")
+print(f"Результат умножения: {kletka1 * kletka2}")
+print(f"Результат деления нацело: {kletka1 / kletka2}")
 
+print("\nВывод через функцию:")
 print(kletka1.make_order(10))

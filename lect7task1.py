@@ -26,4 +26,5 @@ class MyClass:
 mc = MyClass([[12, 7, 3], [4, 5, 6], [7, 8, 9]])
 mc2 = MyClass([[5, 8, 1], [6, 7, 3], [4, 5, 9]])
 print(mc)
+print(mc2)
 print(mc + mc2)
