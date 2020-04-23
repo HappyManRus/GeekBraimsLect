@@ -18,9 +18,6 @@ class Kletka:
     def __truediv__(self, other):
         return (self.colvokletok // other.colvokletok)
 
-    def __str__(self):
-        return (self.colvokletok // other.colvokletok)
-
     def make_order(self, colvoraid):
         a = ""
         for i in range(1, self.colvokletok + 1):
