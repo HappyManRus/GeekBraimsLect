@@ -1,0 +1,19 @@
+class date_class:
+    def __init__(self, str):
+        self.str = str
+    def didsit(self):
+        return date_class.partoInt(self.str)
+    @classmethod
+    def partoInt(cls, forconvert):
+        int(forconvert)
+        return cls.date_check(int(forconvert))
+    @staticmethod
+    def date_check(par1):
+        if (par1 < 0) or (par1 > 15):
+            par1 = 10
+        return (par1)
+dt = date_class("12")
+try:
+    print(f"число: {dt.didsit()}")
+except:
+    print("Не число")
