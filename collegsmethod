@@ -1,0 +1,17 @@
+class date_class:
+    def __init__(self, chislo):
+        self.chislo = chislo
+    @classmethod
+    def partoInt(cls, forconvert):
+        par1 = date_class.date_check(int(forconvert))
+        return cls(par1)
+    @staticmethod
+    def date_check(par1):
+        if (par1 < 0) or (par1 > 15):
+            par1 = 10
+        return (par1)
+dt = date_class.partoInt("12")
+try:
+    print(f"число: {dt.chislo}")
+except:
+    print("Не число")
